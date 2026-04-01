@@ -1,1 +1,1 @@
-# dti-prediction
+# DTI Prediction
