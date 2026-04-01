@@ -1,0 +1,2 @@
+model,auc,best_epoch,n_train,n_test,n_params
+GNN,0.8887,50,6982,1746,31106
