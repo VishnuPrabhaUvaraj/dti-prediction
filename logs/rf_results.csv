@@ -1,0 +1,2 @@
+model,auc,cv_auc_mean,cv_auc_std,n_train,n_test
+Random Forest,0.9694,0.7305,0.1429,6982,1746
