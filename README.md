@@ -24,7 +24,7 @@ Predicting EGFR inhibitor activity comparing two ML approaches on 8,728 compound
 ![EDA](figures/eda_plots.png)
 
 ## Dataset
-- Source: ChEMBL database — EGFR (CHEMBL203)
+- Source: ChEMBL database - EGFR (CHEMBL203)
 - Raw records: 17,723
 - Final compounds: 8,728
 - Active (IC50 ≤ 1000 nM): 7,767 (89%)
@@ -38,13 +38,13 @@ ChEMBL API → IC50 data → pIC50 conversion
 → Binary labels → Two ML models → Comparison
 ```
 
-### Model 1 — Random Forest
+### Model 1 - Random Forest
 - Morgan fingerprints (radius=2, 2048 bits) via RDKit
 - 200 decision trees with class_weight=balanced
 - 5-fold cross-validation
 - SHAP explainability
 
-### Model 2 — Graph Neural Network
+### Model 2 - Graph Neural Network
 - Molecular graph: atoms=nodes (15 features), bonds=edges
 - 3-layer GCN with global mean pooling
 - 31,106 trainable parameters
@@ -52,9 +52,9 @@ ChEMBL API → IC50 data → pIC50 conversion
 
 ## Why Random Forest outperformed GNN
 - Heavy class imbalance (89% active) favours RF
-- Limited dataset size (8,728) — GNN needs more data
-- GNN AUC still improving at epoch 50 — more training would help
-- RF uses class_weight=balanced — GNN does not
+- Limited dataset size (8,728) - GNN needs more data
+- GNN AUC still improving at epoch 50 - more training would help
+- RF uses class_weight=balanced - GNN does not
 
 ## Tools Used
 
