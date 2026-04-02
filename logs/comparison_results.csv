@@ -1,0 +1,3 @@
+model,auc,approach,winner
+Random Forest,0.9694,Morgan Fingerprints,True
+GNN,0.8887,Graph Neural Network,False
